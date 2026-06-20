@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111111" />
+  <title>PIGGG A CARD | Buy • Sell • Trade • Collect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">ส่งฟรีเมื่อสั่งซื้อครบ ฿1,500 <span>•</span> รับซื้อ / เทรด / ฝากขายการ์ด</div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="PIGGG A CARD หน้าแรก">
+      <img src="assets/logo.png" alt="PIGGG A CARD logo">
+      <span>PIGGG <b>A</b> CARD</span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#shop">สินค้า</a>
+      <a href="#mystery">Mystery Pack</a>
+      <a href="#services">บริการ</a>
+      <a href="#about">เกี่ยวกับเรา</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchButton" aria-label="ค้นหา">⌕</button>
+      <button class="cart-button" id="cartButton">ตะกร้า <span id="cartCount">0</span></button>
+      <button class="menu-button" id="menuButton" aria-label="เปิดเมนู">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE COLLECTOR'S HOME</p>
+        <h1>การ์ดที่ใช่<br><span>สำหรับคอลเลกชันคุณ</span></h1>
+        <p class="hero-text">ซื้อ ขาย เทรด และค้นพบการ์ดหายาก ในพื้นที่ที่สร้างมาเพื่อคนสะสมจริง</p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">เลือกดูการ์ด</a>
+          <a href="#mystery" class="btn btn-ghost">เปิด Mystery Pack</a>
+        </div>
+        <div class="trust-row">
+          <div><strong>100%</strong><span>รูปจริงทุกใบ</span></div>
+          <div><strong>24h</strong><span>ตอบแชตไว</span></div>
+          <div><strong>GRADING</strong><span>ช่วยประเมินเบื้องต้น</span></div>
+        </div>
+      </div>
+      <div class="hero-showcase">
+        <div class="orange-orbit"></div>
+        <div class="hero-card hero-card-back"></div>
+        <div class="hero-card hero-card-main">
+          <img src="assets/trent.jpg" alt="การ์ดฟุตบอลลายเซ็น Trent Alexander-Arnold">
+          <div class="hero-card-label"><span>FEATURED HIT</span><b>Autograph /25</b></div>
+        </div>
+        <div class="floating-note note-top">NEW ARRIVAL</div>
+        <div class="floating-note note-bottom">BUY • SELL • TRADE</div>
+      </div>
+    </section>
+
+    <section class="category-strip">
+      <button class="category active" data-filter="all">ทั้งหมด</button>
+      <button class="category" data-filter="football">ฟุตบอล</button>
+      <button class="category" data-filter="anime">อนิเมะ & TCG</button>
+      <button class="category" data-filter="graded">Graded Cards</button>
+      <button class="category" data-filter="pack">Mystery Pack</button>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CURATED PICKS</p>
+          <h2>การ์ดเด่นประจำสัปดาห์</h2>
+        </div>
+        <a href="#shop" class="text-link">ดูทั้งหมด →</a>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="football graded">
+          <div class="product-image"><img src="assets/trent.jpg" alt="Trent Alexander-Arnold autograph card"></div>
+          <div class="product-meta"><span class="pill">FOOTBALL</span><span class="availability">1 ใบ</span></div>
+          <h3>Trent Alexander-Arnold<br>Merlin Heritage Auto /25</h3>
+          <div class="product-bottom"><strong>฿10,000</strong><button class="add-cart" data-product="Trent Alexander-Arnold Merlin Heritage Auto /25" data-price="10000">เพิ่ม</button></div>
+        </article>
+
+        <article class="product-card" data-category="football graded">
+          <div class="product-image"><img src="assets/hazard.jpg" alt="Eden Hazard autograph card"></div>
+          <div class="product-meta"><span class="pill">FOOTBALL</span><span class="availability">1 ใบ</span></div>
+          <h3>Eden Hazard<br>Topps Finest Auto</h3>
+          <div class="product-bottom"><strong>฿6,500</strong><button class="add-cart" data-product="Eden Hazard Topps Finest Auto" data-price="6500">เพิ่ม</button></div>
+        </article>
+
+        <article class="product-card" data-category="football graded">
+          <div class="product-image"><img src="assets/antony.jpg" alt="Antony autograph card"></div>
+          <div class="product-meta"><span class="pill">FOOTBALL</span><span class="availability">1 ใบ</span></div>
+          <h3>Antony<br>Topps Chrome Auto</h3>
+          <div class="product-bottom"><strong>฿4,200</strong><button class="add-cart" data-product="Antony Topps Chrome Auto" data-price="4200">เพิ่ม</button></div>
+        </article>
+
+        <article class="product-card" data-category="anime graded">
+          <div class="product-image"><img src="assets/anime-card.jpg" alt="Japanese anime trading card"></div>
+          <div class="product-meta"><span class="pill">ANIME TCG</span><span class="availability">1 ใบ</span></div>
+          <h3>Japanese Anime TCG<br>Premium Foil Card</h3>
+          <div class="product-bottom"><strong>฿2,900</strong><button class="add-cart" data-product="Japanese Anime TCG Premium Foil Card" data-price="2900">เพิ่ม</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mystery-section" id="mystery">
+      <div class="mystery-copy">
+        <p class="eyebrow">LIMITED DROP</p>
+        <h2>FOOTBALL<br><span>MYSTERY PACK</span></h2>
+        <p>ลุ้นการ์ดฟุตบอลคัดมาแล้วสำหรับนักสะสม ทั้งลายเซ็น รันนัมเบอร์ และชิ้นส่วนผ้า</p>
+        <div class="mystery-price"><span>ซองละ</span><strong>฿180</strong></div>
+        <button class="btn btn-primary add-cart" data-product="Football Mystery Pack" data-price="180">หยิบใส่ตะกร้า</button>
+      </div>
+      <div class="mystery-stats">
+        <div><strong>158</strong><span>ซองทั้งหมด</span></div>
+        <div><strong>19</strong><span>ลายเซ็น</span></div>
+        <div><strong>39</strong><span>รันนัมเบอร์</span></div>
+        <div><strong>3</strong><span>ชิ้นส่วนผ้า</span></div>
+      </div>
+      <div class="mystery-visual">
+        <div class="pack pack-one">PIGGG<br><span>MYSTERY</span></div>
+        <div class="pack pack-two">A CARD<br><span>LIMITED</span></div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MORE THAN A STORE</p>
+          <h2>บริการสำหรับนักสะสม</h2>
+        </div>
+      </div>
+      <div class="service-grid">
+        <article><span>01</span><h3>รับซื้อ & ฝากขาย</h3><p>ประเมินตามสภาพการ์ด ตลาด และความต้องการของนักสะสม</p></article>
+        <article><span>02</span><h3>เทรดการ์ด</h3><p>นัดเทรดอย่างปลอดภัย พร้อมช่วยจับคู่ดีลที่เหมาะกับคุณ</p></article>
+        <article><span>03</span><h3>อุปกรณ์ปกป้องการ์ด</h3><p>Top loader, sleeve, card case และอุปกรณ์จัดเก็บครบ</p></article>
+        <article><span>04</span><h3>Community Table</h3><p>พื้นที่คุย แชร์ และค้นพบการ์ดใบต่อไปในคอลเลกชัน</p></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-logo"><img src="assets/logo.png" alt=""></div>
+      <div>
+        <p class="eyebrow">PIGGG A CARD</p>
+        <h2>สำหรับคนที่รู้ว่า<br>การ์ดหนึ่งใบมีความหมาย</h2>
+        <p>เราเริ่มจากความชอบในการเปิดซอง แลกเปลี่ยน และตามหาการ์ดใบที่อยากได้ที่สุด จึงอยากให้ PIGGG A CARD เป็นพื้นที่ออนไลน์ที่ทำให้การสะสมสนุก ปลอดภัย และเข้าถึงง่ายขึ้น</p>
+        <a href="#shop" class="text-link">เริ่มสะสมกับเรา →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="assets/logo.png" alt=""><div><b>PIGGG <span>A</span> CARD</b><small>BUY • SELL • TRADE • COLLECT</small></div></div>
+    <p>© 2026 PIGGG A CARD. เว็บไซต์ตัวอย่างสำหรับร้านขายการ์ดออนไลน์</p>
+    <div class="socials"><a href="#">Instagram</a><a href="#">LINE</a><a href="#">Facebook</a></div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head"><h2>ตะกร้าของคุณ</h2><button id="closeCart">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="empty">ยังไม่มีสินค้าในตะกร้า</p></div>
+    <div class="cart-total"><span>รวมทั้งหมด</span><strong id="cartTotal">฿0</strong></div>
+    <button class="checkout-button" id="checkoutButton">ดำเนินการสั่งซื้อ</button>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast">เพิ่มสินค้าในตะกร้าแล้ว</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
